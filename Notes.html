@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script> 
+    <link rel="stylesheet" type="text/css" href="http://code.jquery.com/ui/1.9.2/themes/base/jquery-ui.css"/>
+    <link rel="stylesheet" type="text/css" href="NotesCSS.css"></link>
+    <head>
+        <title> Bulletin Board App </title>
+    </head>
+    <body>
+        <div id = "menuBar">
+                <td><button id="addNote" tabindex="1" onclick="this.blur();">+</button></td>
+                <td><button id="BG" onclick="this.blur();">BG</button></td>
+                <td><button id="insert" onclick="this.blur();">INSERT</button></td>
+                <td><button id="clear" onclick="this.blur();">CLEAR</button></td>
+                <td><button id="save" onclick="this.blur();">SAVE</button></td>
+        </div>
+        <div id = "sideBarBG">
+            <div class ="bgnote" id = "original" onclick = "Background.setOriginal();"></div>
+            <div class ="bgnote" id = "bricks" onclick = "Background.setBricks();"></div>
+            <div class ="bgnote" id = "honeycomb" onclick = "Background.setHoneyComb();"></div>
+            <div class ="bgnote" id = "checkerboard" onclick = "Background.setCheckerBoard();"></div>
+            <div class ="bgnote" id = "starrynight" onclick = "Background.setStarryNight();"></div>
+        </div>
+        <div id = "notes">
+        </div>
+        <script src="Notes.js"></script>
+    </body>
+</html>
