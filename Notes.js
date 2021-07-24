@@ -105,6 +105,9 @@ document.getElementById("addNote").addEventListener("click", event => {
     $("#note" + count).resizable({
         minHeight:50,minWidth:50
     });
+    $("#container" + count).resizable({
+        minHeight:50,minWidth:50
+    });
     //have to append a new css class for each note in ordr to change the z-index
     //});
     //add handle click
