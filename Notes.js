@@ -90,9 +90,6 @@ Background.setOriginal();
 document.getElementById("addNote").addEventListener("click", event => {
    arr.push(new Note(count));
    $("#notes").append(arr[count].getText());
-    $("#note" + count).resizable({
-        minHeight:50,minWidth:50
-    });
     $("#container" + count).draggable({handle:"#handle" + count});
 
     var num = count;
@@ -105,6 +102,9 @@ document.getElementById("addNote").addEventListener("click", event => {
     note.addEventListener("mousedown", event =>{arr[num].mouseDown()});
     
     $("<style type='text/css'> .Note" + count +"{z-index:1;} </style>").appendTo("head");
+    $("#note" + count).resizable({
+        minHeight:50,minWidth:50
+    });
     //have to append a new css class for each note in ordr to change the z-index
     //});
     //add handle click
